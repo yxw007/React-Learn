@@ -1,4 +1,5 @@
-import { createStore } from "redux";
+// import { createStore } from "redux";
+import { createStore } from "./redux";
 
 const counter = document.getElementById("counter");
 const addButton = document.getElementById("add-button");
