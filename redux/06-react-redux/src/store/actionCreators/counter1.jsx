@@ -1,19 +1,19 @@
-import { ADD2, MINUS2 } from "../action-types";
+import { ADD1, MINUS1 } from "../action-types";
 import {bindActionCreators} from "../../redux"
 import {store} from "../";
 
 function add() {
-  return { type: ADD2 };
+  return { type: ADD1 };
 }
 
 function minus() {
-  return { type: MINUS2 };
+  return { type: MINUS1 };
 }
 
-const actionCreators = { add, minus };
+export const actionCreators = { add, minus };
 export const boundActionCreators = bindActionCreators(actionCreators, store.dispatch);
 /* 
   {
-  add: () => store.dispatch(add())
+  add: () => store.dispatch(add()) 
   }
   */
